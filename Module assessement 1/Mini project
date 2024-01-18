@@ -1,0 +1,14 @@
+FIRST PYTHON PROJECT
+
+Requirements: Write a program to print out your personal information on screen
+
+Follow these instructions to complete the mini-project.
+1. Create a Python Tutorial folder containing two Python files (named first.py and second.py) using VS Code. DONE
+
+2. In the first.py file you created in the third lesson of this module, Interactive Learning Mission 3 – First Python Program , write a program that prints an introduction to you (include your name, age, and a summary of what you want to learn in this project). (If you didn’t create a first.py file earlier, create it now, but leave it empty.) DONE
+
+3. If you haven’t created the Python Tutorial folder yet, then do so now, and open it in VS Code. Now, create a new folder inside the Python Tutorial folder for the first submodule . Then create a folder called Module Assessments inside the Tutorial folder. After that, create three Python files (first.py, second.py, third.py) and put each of these files in different, appropriately name module assessment folders, such as First module assessment, Second Module assessment, and Third module assessment. DONE
+
+4. Upload your Project to GitHub. DONE
+
+5. Submit your mini-project. This step is optional but highly recommended. To have your mini-project graded, go to the questionnaire. 
