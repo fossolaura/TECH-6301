@@ -42,6 +42,6 @@ print(number*2)
 
 #In order to get a 6, you need to define your input as an interger
 number = int(input("Please enter a number: "))
-print(number*3)
+print(number*2)
 
 #End of course for day 1
