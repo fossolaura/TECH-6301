@@ -213,7 +213,71 @@ print("Floor Division:", a // b) # Prints the integer part of a / b
 
 # Assignment operators 
 # used for performing assignment operations on variables
-# Assignment operator (=), Addition assignment (+=), Subtraction assignment (-=)
-# Multiplication assignment (*=), Division assignment (/=), Reminder assignment (%=)
-# Exponent assignment (**=), Floor division assignment (//=)
 
+x = 10            # Assignment
+print("x:", x)
+
+x += 3            # Addition assignment: increase x by
+print("x += 3:", x)  # x is now 13
+
+x -= 1            # Subtraction assignment: decrease x by
+print("x -= 1:", x)  # x is now 12
+
+x *= 2            # Multiplication assignment: make x bigger by
+print("x *= 2:", x)  # x is now 24
+
+x /= 3            # Division assignment: divide x by
+print("x /= 3:", x)  # x is now 8.0
+
+x %= 5            # Modulus assignment: divide x by and keep remainder
+print("x %= 5:", x)  # x is now 3.0 (8 modulo 5 is 3)
+
+#    mini tuto on mods
+#    8 mod 5 = 
+#         8/3 = 1 R3 ( 1 remainder 3)
+#         now put answer in the equation
+#         quotien * divisor + remainder = divident
+#              1  *     5   +  3        =  8
+#         the remainder (R3) is the answer.
+x **= 2           # Exponent assignment: exponent x by
+print("x **= 2:", x)  # x is now 9.0
+
+x //= 2           # Floor division assignment: divide x by and round to the nearest whole number
+print("x //= 2:", x)  # x is now 4 (9 divided by 4 and rounded down)
+
+# TO REMEMBER: if you want the value of x to be static through out the code,
+#    you hae to restarted the value of x before each operations.
+
+# Comparaison operators 
+# also know was relations operators, theuy assess the values
+# on both side of the operator and determine a relationship between them.
+
+a = 10
+b = 20
+
+print("Is a equal to b?", a == b)  # False, because 10 is not equal to 20
+print("Is a not equal to b?", a != b)  # True, because 10 is not equal to 20
+
+print("Is a greater than b?", a > b)  # False, because 10 is not greater than 20
+print("Is a less than b?", a < b)  # True, because 10 is less than 20
+
+print("Is a greater than or equal to b?", a >= b)  # False, because 10 is neither greater than nor equal to 20
+print("Is a less than or equal to b?", a <= b)  # True, because 10 is less than 20
+
+# Logical operators
+# are used to combine conditional statements
+# apdopte Boolean logic
+x = 7
+y = 10
+
+# AND operator
+print("x > 5 and y > 5:", x > 5 and y > 5)  # True, because both conditions are true
+# 7 > 5 and 10 > 5: True
+# OR operator
+print("x > 10 or y > 5:", x > 10 or y > 5)  # True, because one condition (y > 5) is true
+# 7 > 10 or 10 > 5: True
+# NOT operator
+print("not(x > 5):", not(x > 5))  # False, because x > 5 is true, and not(True) is False
+# not(7 > 5): False
+
+# Bitwise operators
