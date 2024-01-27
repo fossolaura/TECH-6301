@@ -422,6 +422,12 @@ print(main())
 #         Confident
 
 
+
+
+
+
+
+
 # LET'S DO THE MINI PROJECT
 # Calculate Age
      # Requirements
@@ -442,4 +448,47 @@ Age = (Current_year_int - Year_born_int)
 
 print(f"You are", Age, "years old !")
 
+
+# Calculate Age - Questionnaire
+
+# 1. What is the primary objective of this mini-project?
+# write a program that print age
+
+# 2. How many inputs does the program require from the user?
+#  2
+
+# 3. What type of information is required from the user to calculate age?
+#  Year of birth and current year
+
+# 4. What is the expected output of this program?
+#  the age of the persom/item
+
+# 5. In the context of the project, what do the user inputs represent?
+#   Born/created year and current year
+
+# 6. Which function is commonly used to take user input in Python?
+#    input ()
+
+# 7. What is the purpose of subtracting the born year from the current year in the program?
+#    To find the age of the person.
+
+# 8. What will the program do if a user mistakenly enters a letter instead of a number for the born year?
+# Print an error message and terminate the program.
+# could also use a while loop --- but have not learned that yet in this course.
+
+# 9. Which line of code will output the calculated age using the print() function? choose the best one 
+#    all of the above
+
+# 10. What does the term "input validation" do in the context of this mini-project?
+#    Verifies the user input to ensure it meets specified criteria.
+
+
+
+
+
+# LET'S DO THE MINI PROJECT
+# Calculator
+# Requirements
+#    In this assessment, you will create a calculator. Write a program that gets two inputs from the user 
+#    and performs basic calculator functionalities on them (add, subtract, multiply and divide).
 
