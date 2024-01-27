@@ -281,3 +281,165 @@ print("not(x > 5):", not(x > 5))  # False, because x > 5 is true, and not(True) 
 # not(7 > 5): False
 
 # Bitwise operators
+# work on numerical values but treat it as a sequence of individual bits (zeros and ones).
+# Hence the operands undergo automatic conversion into binary buts in order for the operation
+# to be carried out.
+# Once the operation is completed, the resulting bits are reocnverted into numerical values.
+# *REMEMBER*
+#     The bits of a number are predetermined. 
+
+# Binary AND (&) Results 1 if both operands’ bits are 1, otherwise results 0.
+a = 5  # 5 in binary is 101
+b = 3  # 3 in binary is 011
+print(a & b)  # Outputs 1 (binary 001) - see xplanation below
+
+# a = 5 which in binary is 101.
+# b = 3 which in binary is 011.
+# The bitwise AND operation compares each corresponding bit of these binary numbers:
+# keep in mind the comparison is done from right to left
+#    First bit: 1 (from 101) AND 1 (from 011) gives 1.
+#    Second bit: 0 (from 101) AND 1 (from 011) gives 0.
+#    Third bit: 1 (from 101) AND 0 (from 011) gives 0.
+# So, the result of 101 AND 011 is 001, which is 1 in decimal (equivalent value in the decimal number system). 
+#    That's why print(a & b) outputs 1.
+
+# Binary OR (|): Results 1 if one of the two operands’ bits is 1, otherwise results 0.
+a = 5  # 5 in binary is 101
+b = 3  # 3 in binary is 011
+print(a | b)  # Outputs 7 (binary 111)
+
+# Binary XOR (^): Results 1 if only one of the two operands’ bits is 1, otherwise results 0.
+a = 5  # 5 in binary is 101
+b = 3  # 3 in binary is 011
+print(a ^ b)  # Outputs 6 (binary 110)
+
+# Binary Ones complement or Binary NOT (~): Inverts bits from 1 to 0 and vice versa.
+a = 5  # 5 in binary is 101
+print(~a)  # Outputs -6 (in binary, this is the two's complement of 101)
+
+# Explanations:
+# In binary, 5 is represented as 101. In an 8-bit system, it's 00000101.
+# The ~ operator inverts all bits. So 00000101 becomes 11111010.
+# In binary, negative numbers are represented using two's complement. To find the two's complement:
+#   First, invert all the bits (which ~ already does).
+#   Then, add 1 to the result.
+# So, after inverting, you have 11111010 (6 in decimal). Add 1 to this, you get 11111011.
+# 11111011 is the two's complement representation of -6.
+
+# Binary Left Shift (<<): Left shifting involves introducing 0 from the right side, causing the leftmost bits to be displaced or dropped.
+a = 5  # 5 in binary is 101
+print(a << 1)  # Outputs 10 (binary 1010)
+
+# Binary Right Shift (>>): Right shifting entails inserting duplicates of the leftmost bit from the left side, leading to the removal of the rightmost bits.
+a = 5  # 5 in binary is 101
+print(a >> 1)  # Outputs 2 (binary 10) essentialy the 1 (leftmost bit) was dropped.
+
+#  Membership operators 
+# assess whether an element belongs to a sequence, like strings, lists, or tuples. These operators are:
+
+a= 10
+b=20
+ls=[12,10, "hello"]
+tp= ("hi", 1,20)
+
+# Operator (in): Results in a True outcome if a variable is discovered within the indicated sequence; otherwise, it yields False.
+print("a in ls:", a in ls) # a in ls: True
+print("b in ls:", b in ls) # b in ls: False
+
+# Operator (not in): Performs the reverse operation of the operator (in).
+print("a not in tp:", a not in tp) # a not in tp: True
+print("b not in tp:", b not in tp) # b not in tp: False
+
+# Identity operators
+# compare objects, verifying whether or not both objects are genuinely of the same data type and share identical memory locations
+a= 10
+b= 10
+c= 4 
+# Operator (is): Returns True if both variables point to the same object.
+print("a is b:", a is b) # a is b: True
+print("id(a)==id(b):", id(a)==id(b)) # id(a)==id(b): True
+
+print("a is c:", a is c) # a is c: False
+print("id(a)==id(c):", id(a)==id(c)) # id(a)==id(c): False
+
+# Operator (is not): eturns True if the variables do not point to the same object.
+print("b is not  a:", b is not a) # b  is not a: False
+print("id(a)!=id(b):", id(a)!=id(b)) # id(a)!=id(b): False
+ 
+print("b is not c:", b is not c) # b is not  c: True
+print("id(a)!=id(c):", id(a)!=id(c)) # id(a)!=id(c): True
+
+
+# MISSION: To complete this activity, perform the following: 
+# Complete the code snippet on the left to return the variable c 
+# by adding the numbers (an and b) and then convert the result to a string data type.
+
+def main():
+    a=10
+    b=3.6
+    
+    ## Uncomment the line below and type your code
+    c=str(( a + b))
+
+    return c
+results = main ()
+print(main())
+print(type(results))
+
+
+# MISSION: To complete this activity, perform the following: 
+# - Write a Python code that increments the variable “a” by 4 and subsequently applies an XOR operation with 2.
+# - After these consecutive operations, return the updated value of the variable "a." 
+
+def main():  
+
+    a=3 
+
+    a+=4 
+
+    a^=2
+
+    #############  
+
+  
+
+    return a  
+
+print(main())
+
+# MISSION QUIZ
+
+# What data type stores only the two values: True or False? 
+#         BOOLEANS
+#         Confident
+
+# Can a tuple’s items be changed after creation?
+#         NO,tupes are immutable in python
+#         Confident
+
+# Which logical operator reverses the logical state of a statement?
+#         Not
+#         Confident
+
+
+# LET'S DO THE MINI PROJECT
+# Calculate Age
+     # Requirements
+     # Write a program to calculate age of a person/item. 
+     #The program takes two inputs from the user(year person born/item created and current year) and prints out the age of the person/item.
+
+print("I'm going to calculate your age")
+
+print("I need 2 inputs from you")
+
+Year_born = input("What year were you born?: ")
+Current_year = input("What year are you in right now?: ")
+
+Year_born_int =int(Year_born)
+Current_year_int = int(Current_year)
+
+Age = (Current_year_int - Year_born_int)
+
+print(f"You are", Age, "years old !")
+
+
