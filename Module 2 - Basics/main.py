@@ -60,7 +60,7 @@ import math
 
 # Take the input from the user and assign it to a variable called radius.
 
-radius = float(input("Enter the radius of your circle: "))
+radius = abs(float(input("Enter the radius of your circle: ")))
 
 # Create variables called circumference and area and assign them their appropriate values.
 
