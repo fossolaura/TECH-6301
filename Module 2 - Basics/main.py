@@ -46,3 +46,29 @@ print("Addition:", a + b)
 print("Subtraction:", a - b)     
 print("Multiplication:", a * b) 
 print("Division:", a / b) 
+
+
+
+
+# LET'S DO THE MINI PROJECT
+# Calculate the Area and Circumference of a Circle
+# Requirements
+#   Write a program to calculate the area and circumference of a circle given the inputs from the user. 
+#   You are given the required radius input from the user. Print out the area and circumference of the circle.
+
+import math
+
+# Take the input from the user and assign it to a variable called radius.
+
+radius = float(input("Enter the radius of your circle: "))
+
+# Create variables called circumference and area and assign them their appropriate values.
+
+circumference = 2 * math.pi * radius
+
+area = math.pi * radius ** 2
+
+# Print the two variables.
+
+print(f"The circumference of your circle is {circumference}!")
+print(f"The area of your cicle is {area}!")
