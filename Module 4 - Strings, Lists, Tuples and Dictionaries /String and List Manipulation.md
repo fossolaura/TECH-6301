@@ -297,3 +297,12 @@ if "eve" in st2: # membership operator
         # world!!
         ```
 8. Formatting operator: This is described later in this section.
+The string formatting operator (%) is employed to define the structure a string according to specific needs.
+
+Some commonly used different string formatting specifiers and their meanings are as follows:
+  1. %d: Signed decimal integer
+  
+  2. %u: Unsigned decimal integer
+  3. %c: Character
+  4. %s: String
+  5. %f: Floating-point number
