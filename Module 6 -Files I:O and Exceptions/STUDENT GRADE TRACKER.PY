@@ -20,9 +20,12 @@ def input_and_store_grades():
         while True:
             try:
                 grade = input(f"Enter grade for {subject}: ")
-                grade = float(grade)  # Convert input to float; this also handles validation
-                grades[subject] = grade
-                break
+                grade = float(grade)  # Convert input to float
+                if 0 <= grade <= 100:  # Check if the grade is within the valid range
+                    grades[subject] = grade
+                    break  # Exit the loop if a valid grade is entered
+                else:
+                    print("Invalid grade. Please enter a grade between 0 and 100.")
             except ValueError:
                 print("Invalid input. Please enter a numeric grade.")
     return grades
